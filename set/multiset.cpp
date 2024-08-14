@@ -14,6 +14,9 @@ void print(std::multiset<int>multiset) {
 int main() {
     std::multiset<int>multiset({15, 13, 14, 11, 12, 21, 29, 24, 25, 11, 15, 21});       // Allow duplicate keys
     print(multiset);
+
+    int count = multiset.count(21);
+    std::cout << "Element count(21): " << count << std::endl;
     
     // Rest all are exactly same as set container.    
 }
